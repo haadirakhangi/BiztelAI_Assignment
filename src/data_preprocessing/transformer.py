@@ -29,7 +29,7 @@ class DataTransformer:
         
         if not self.use_spacy:
             tokens = word_tokenize(text.lower())
-            lemmatized_tokens = [self.lemmatizer.lemmatize(token) for token in tokens if token.isalnum()]
+            lemmatized_tokens = [self.lemmatizer.lemmatize(token) for token in tokens if token.isalpha()]
             filtered_tokens = [token for token in lemmatized_tokens if token not in self.stop_words]
 
         if self.use_spacy:
