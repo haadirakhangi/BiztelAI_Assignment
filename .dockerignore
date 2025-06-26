@@ -1,0 +1,35 @@
+venv/
+.venv/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE and OS specific files
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*.swo
+
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# Test files and coverage (unless you run tests inside docker build)
+tests/
+.pytest_cache/
+htmlcov/
+.coverage
+
+# notebooks and environment variables
+notebooks/
+.env
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
